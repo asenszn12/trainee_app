@@ -1,5 +1,6 @@
 export const Home = () => {
-    return <div>
+    return (
+    <div className="min-h-screen ">
         {/* Theme toggle (dark mode or light mode*/}
 
         {/* Background effects (dreamy vibes)*/}
@@ -10,4 +11,5 @@ export const Home = () => {
 
         {/* Footer */}
     </div>
-}
+    );
+};
