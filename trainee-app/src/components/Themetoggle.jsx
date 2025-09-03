@@ -3,10 +3,12 @@ import { Sun, Moon } from "lucide-react";
 
 export const Themetoggle = () => {
 
+    // automatically set to lightmode
     const [isDarkMode, setDarkMode] = useState(false);
 
     const toggleTheme = () => {
         if (isDarkMode) {
+            document.documentElement.classList.remove("dark");
             setDarkMode(false);
         } else {
             document.documentElement.classList.add("dark");
