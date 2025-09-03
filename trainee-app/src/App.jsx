@@ -7,13 +7,11 @@
 // React Router DOM → Routing/navigation for React.
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "../pages/Home";
-import { NotFound } from "../pages/NotFound";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/Notfound";
+
 
 function App() {
-// make route for main landing page and a route for if the page is not found
-/* index: sends client to what our default route is, aka landing page */
-// /* path="*": match to any route that hasnt been defined   */
   return (
     <>
       <BrowserRouter>

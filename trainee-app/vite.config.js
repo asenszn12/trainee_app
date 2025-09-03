@@ -5,7 +5,7 @@ import path from  "path"
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
 
   // use src as a starting directory to other files in different directions
   // resolve is to find the important stuff and alias is to rename it
