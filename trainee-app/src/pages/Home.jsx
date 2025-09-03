@@ -1,4 +1,4 @@
-import { Themetoggle } from "../src/components/Themetoggle";
+import { Themetoggle } from "../components/Themetoggle";
 
 export const Home = () => {
     return (
