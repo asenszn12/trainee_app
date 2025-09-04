@@ -1,5 +1,5 @@
-import { Themetoggle } from "../components/Themetoggle";
-
+import { Themetoggle } from "@/components/Themetoggle";
+import { CloudyBackground } from "@/components/CloudyBackground";
 export const Home = () => {
     return (
     // Apply colour for background
@@ -8,7 +8,8 @@ export const Home = () => {
         <Themetoggle />
 
         {/* Background effects (dreamy vibes)*/}
-
+        <CloudyBackground />
+        
         {/* Navbar*/}
 
         {/* Main content */}
