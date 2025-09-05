@@ -1,6 +1,6 @@
 import { Themetoggle } from "@/components/Themetoggle";
 import { CloudyBackground } from "@/components/CloudyBackground";
-import { Navbar } from "react-bootstrap";
+import { Navbar } from "@/components/Navbar";
 export const Home = () => {
     return (
     // Apply colour for background
@@ -11,7 +11,7 @@ export const Home = () => {
         {/* Background effects (dreamy vibes)*/}
         <CloudyBackground />
         
-        {/* Navbar*/}
+        {/* Navbar CHECK IF WE NEED BOOTSTRAP*/}
         <Navbar />
 
         {/* Main content */}
