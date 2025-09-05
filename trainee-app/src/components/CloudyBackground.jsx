@@ -6,6 +6,16 @@ export const CloudyBackground = () => {
     useEffect(() => {
         makeClouds();
         makeMeteors();
+
+        // handle resizing for other devices
+        const handleResize = () => {
+            makeClouds();
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize)
+
     }, []);
 
     const [clouds, setClouds] = useState([])
