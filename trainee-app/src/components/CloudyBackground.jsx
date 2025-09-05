@@ -6,9 +6,12 @@ export const CloudyBackground = () => {
     // id, size, x, y, opacity, and animation duration
     useEffect(() => {
         makeClouds();
+        makeMeteors();
     }, []);
 
     const [clouds, setClouds] = useState([])
+    const [meteors, setMeteor] = useState([])
+
     const makeClouds = () => {
         const numberofClouds = Math.floor(
             window.innerWidth * window.innerHeight / 20000 );
@@ -27,7 +30,25 @@ export const CloudyBackground = () => {
         }
 
         setClouds(newClouds);
+    };
+
+    const makeMeteors = () => {
+        const numberofMeteors = 5
+        const newMeteors = [];
+        
+        for (let i = 0; i < numberofMeteors; i++) {
+            newMeteors.push({
+                id: i,
+                size: Math.random() * 2 + 1,
+                x: Math.random() * 100,
+                y: Math.random() * 20,
+                delay: Math.random() * 15,
+                animationDuration: Math.random() * 3 + 3,
+            });
+        }
+        setMeteor(newMeteors);
     }
+
     return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {clouds.map((cloud) => (
@@ -50,6 +71,21 @@ export const CloudyBackground = () => {
                 `,
             }}/>
         ))}
+
+        {meteors.map((meteor) => (
+            <div 
+                key={meteor.id} 
+                className="meteor animate-meteor" 
+                style={{
+                width: meteor.size * 50 + "px",
+                height: meteor.size * 2 + "px",
+                left: meteor.x + "%",
+                top: meteor.y + "%",
+                delay: meteor.delay + "s",
+                animationDuration: meteor.animationDuration + "s",
+            }}/>
+        ))}
+
     </div>
     );
 };
