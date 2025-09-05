@@ -81,7 +81,7 @@ export const CloudyBackground = () => {
                 height: meteor.size * 2 + "px",
                 left: meteor.x + "%",
                 top: meteor.y + "%",
-                delay: meteor.delay + "s",
+                delay: meteor.delay,
                 animationDuration: meteor.animationDuration + "s",
             }}/>
         ))}
