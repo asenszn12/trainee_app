@@ -23,7 +23,7 @@ export const CloudyBackground = () => {
 
     const makeClouds = () => {
         const numberofClouds = Math.floor(
-            window.innerWidth * window.innerHeight / 20000 );
+            window.innerWidth * window.innerHeight / 30000 );
 
         const newClouds = []
         
