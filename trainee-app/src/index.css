@@ -59,10 +59,10 @@ background, and foreground and using our primary colours*/
   @keyframes clouds {
     0% {
       transform: rotate(0deg) translateX(0);
-      opacity: 1;
+      opacity: 0.75;text-muted-foreground
     }
     70% {
-      opacity: 1;
+      opacity: 0.5;
     }
     100% {
       transform: rotate(0deg) translateX(-500px);
