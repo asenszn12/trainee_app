@@ -16,7 +16,13 @@ export const AboutMe = () => {
                         </h3>
 
                         <p className="text-muted-foreground">
-                            Talk a walk through 
+                            Beyond this portfolio project, I’ve always wanted to create work that 
+                            brings meaningful impact to others. Something that goes beyond just building 
+                            a project for the sake of it.<br></br>
+                            <br></br>
+                            With this program, I’m excited by the opportunity to meet like-minded individuals, 
+                            collaborate on monumental ideas to make them into a reality, and grow together while building something 
+                            from the ground up.
                            
                         </p>
                     </div>
