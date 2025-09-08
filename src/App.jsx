@@ -6,7 +6,7 @@
 // Lucide React → Icon set for React.
 // React Router DOM → Routing/navigation for React.
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/Notfound";
 
@@ -14,12 +14,12 @@ import { NotFound } from "./pages/Notfound";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }

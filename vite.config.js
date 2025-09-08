@@ -6,6 +6,7 @@ import path from  "path"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/trainee_app/',
 
   // use src as a starting directory to other files in different directions
   // resolve is to find the important stuff and alias is to rename it
@@ -13,6 +14,6 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src")
     }
-  },
-  base: "/trainee_app/",
+  }
+
 });
