@@ -2,6 +2,7 @@ import { Themetoggle } from "@/components/Themetoggle";
 import { CloudyBackground } from "@/components/CloudyBackground";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/Hero";
+import { AboutMe } from "../components/About";
 export const Home = () => {
     return (
     // Apply colour for background
@@ -18,6 +19,8 @@ export const Home = () => {
         {/* Main content */}
         <main>
             <HeroSection />
+            <AboutMe />
+            
         </main>
 
         {/* Footer */}
