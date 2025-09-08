@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 // list of different links in navbar
 const navItems = [
-    {name: "Home", href: "#hero"},
+    {name: "Home", href: "/"},
     {name: "About", href: "#about"},
 ];
 
