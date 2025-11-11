@@ -52,8 +52,8 @@ export const AboutMe = () => {
                                     <h4 className="font-semibold mb-2">Hobbies</h4>
                                     <p className="text-sm text-muted-foreground">
                                         Basketball, Badminton,
-                                        Rugby, MMA, Binging any animes on Netflix ( or illegally),
-                                        and Learning random Kpop dances 🕺
+                                        Rugby, MMA, Binging any animes on Netflix, and Browsing 
+                                        through stocks.
                                     </p>
                                 </div>
                             </div>
