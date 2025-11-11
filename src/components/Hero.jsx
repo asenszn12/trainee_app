@@ -12,9 +12,9 @@ export const HeroSection = () => {
                 </h1>
                 <p className="text-lg md:text-xl mx-auto opacity-0 animate-fade-in-delay-3">
                     Welcome to my Zzzone. <br />
-                    I hope you get to know more about me in this portfolio
+                    I hope you get to know more about me in this short portfolio
                     and encourage you on why I'd be a <i><b>dream</b></i> fit in
-                    your award-winning trainee program
+                    your team!
                 </p>
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
                     <button 
